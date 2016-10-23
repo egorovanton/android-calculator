@@ -2,6 +2,110 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/result"
+        android:hint="type expression"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.14" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <Button
+                android:text="1"
+                android:id="@+id/d1"
+                />
+            <Button
+                android:text="2"
+                android:id="@+id/d2"
+                />
+            <Button
+                android:text="3"
+                android:id="@+id/d3"
+                />
+            <Button
+                android:text="+"
+                android:id="@+id/add"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="4"
+                android:id="@+id/d4"
+                />
+            <Button
+                android:text="5"
+                android:id="@+id/d5"
+                />
+            <Button
+                android:text="6"
+                android:id="@+id/d6"
+                />
+            <Button
+                android:text="-"
+                android:id="@+id/sub"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="7"
+                android:id="@+id/d7"
+                />
+            <Button
+                android:text="8"
+                android:id="@+id/d8"
+                />
+            <Button
+                android:text="9"
+                android:id="@+id/d9"
+                />
+            <Button
+                android:text="*"
+                android:id="@+id/mul"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="."
+                android:id="@+id/dot"
+                />
+            <Button
+                android:text="0"
+                android:id="@+id/d0"
+                />
+            <Button
+                android:text="="
+                android:id="@+id/eqv"
+                />
+
+            <Button
+                android:text="/"
+                android:id="@+id/div"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="("
+                android:id="@+id/open"/>
+
+            <Button
+                android:text=")"
+                android:id="@+id/close"/>
+
+            <Button
+                android:text="CLEAR"
+                android:id="@+id/clear"/>
+            <Button
+                android:text="^"
+                android:id="@+id/pow"/>
+        </TableRow>
+
+
+    </TableLayout>
 
 </LinearLayout>
